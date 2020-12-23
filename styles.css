@@ -1,0 +1,138 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    line-height: 150%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: calc(10px + .4vw);
+}
+
+
+    /* ШАПКА */
+
+
+    header {
+        display: block;
+        background: url(gorod.jpg) no-repeat center;
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+}
+
+
+nav img {
+    margin-top: -10px;
+    height: 184px;
+}
+
+ul {
+    list-style: none;
+}
+                          
+li {
+    display: inline;
+}
+
+a {
+    text-shadow: 2px 2px 2px #000;
+    display: inline-block;
+    padding: 10px;             
+    color: rgb(17, 11, 11);                        /* стиль шрифта */       
+    text-transform: uppercase;
+    text-decoration: none;
+
+
+
+}  
+ 
+
+article {
+    padding-bottom: 50px;
+    border-bottom: 0px dotted gray;
+}
+
+main {
+    padding: 5em 0;
+    background-color: white;
+    width: 100%;
+    min-height: 100%;
+}
+
+main img {
+    display: block;
+    width: 50%;
+    padding-left: 0.4em;
+    border-radius: 30px;
+   
+}
+
+#chefs {
+    display: flex;
+    justify-content: center;
+}
+
+#chefs img {
+    max-width: 60%;
+    min-width: 20%;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;                 /*  приложение*/   
+    height: 200vh;
+}
+
+
+@media (min-width:600px){
+    td
+    {                         /* по размеру сайта */
+      display:table-cell;
+    }
+}
+
+td img {
+    width: 100%;
+}
+
+      
+ 
+
+
+     /* ТЕЛЕФОН */
+
+
+a[href^="tel:"]:before {
+    content: "\260E";      /* Трубка */
+    margin-right: 0.8em;
+}
+                                                                    
+a[href^="tel:"] {
+    text-shadow: none;
+    color: black;        /* ТЕЛЕФОН цвет  */
+    font-size: large;
+    text-transform: none;
+}
+                                                                    
+
+  /* ПОДВАЛ.  НИЗ. */
+
+
+footer {
+    background: url(gorod.jpg) no-repeat bottom;
+    background-size: cover;
+    color: rgb(238, 230, 230);
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #000;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    
+}
+
+footer img {
+    margin-top: 60%;
+    height: 184px;
+}
